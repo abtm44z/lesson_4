@@ -13,23 +13,16 @@
 </head>
 <body>
 	<header class="site-header">
-		<a class="wordmark" href="index.html" aria-label="Le Chien, accueil"><span class="mark" aria-hidden="true">C</span> Le Chien</a>
-		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu"><span></span><span></span></button>
-		<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-			<a href="index.html" aria-current="page">Accueil</a>
-			<a href="races.html">Les races</a>
-			<a href="alimentation.html">Alimentation</a>
-			<a href="soins.html">Bien-être</a>
-		</nav>
+		<div class="wordmark"><span class="mark" aria-hidden="true">C</span> Le Chien</div>
+		<p class="header-note">LE GUIDE DES AMOUREUX DES CHIENS</p>
 	</header>
 
 	<main>
 		<section class="hero home-hero">
 			<div class="hero-copy">
-				<p class="eyebrow"><span class="eyebrow-dot"></span> Le guide des amoureux des chiens</p>
+				<p class="eyebrow"><span class="eyebrow-dot"></span> Mieux comprendre son compagnon</p>
 				<h1>Un meilleur ami.<br><em>Mille façons</em> de l’aimer.</h1>
-				<p class="hero-text">Mieux connaître son chien, c’est lui offrir une vie plus heureuse. Découvrez des repères simples pour l’accompagner chaque jour.</p>
-				<a class="button button-dark" href="races.html">Explorer les races <span aria-hidden="true">↗</span></a>
+				<p class="hero-text">Mieux connaître son chien, c’est lui offrir une vie plus heureuse. Découvre des repères simples pour l’accompagner chaque jour.</p>
 				<div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span><span>Curieux, fidèle et toujours partant.<br><strong>Le chien a tant à nous apprendre.</strong></span></div>
 			</div>
 			<div class="hero-image-wrap">
@@ -41,33 +34,47 @@
 
 		<section class="intro-band">
 			<p class="eyebrow">Tout commence par le comprendre</p>
-			<div class="intro-row"><h2>Chaque chien est<br>une histoire à part.</h2><p>Petit ou grand, calme ou plein d’énergie, chaque chien a ses besoins et sa personnalité. Voici les essentiels pour construire une belle relation, jour après jour.</p></div>
+			<div class="intro-row"><h2>Chaque chien est<br>une histoire à part.</h2><p>Petit ou grand, calme ou plein d’énergie, chaque chien a ses besoins et sa personnalité. Découvre les essentiels pour construire une belle relation, jour après jour.</p></div>
 		</section>
 
-		<section class="topic-grid" aria-label="Découvrir le guide">
-			<a class="topic-card topic-races" href="races.html">
-				<span class="topic-number">01 / DÉCOUVRIR</span>
-				<span class="topic-icon" aria-hidden="true">✳</span>
-				<h3>Trouver sa<br>race de chien</h3>
-				<span class="topic-link">Explorer les races <span aria-hidden="true">↗</span></span>
-			</a>
-			<a class="topic-card topic-food" href="alimentation.html">
-				<span class="topic-number">02 / NOURRIR</span>
-				<span class="topic-icon" aria-hidden="true">◒</span>
-				<h3>Bien manger,<br>bien grandir</h3>
-				<span class="topic-link">Voir l’alimentation <span aria-hidden="true">↗</span></span>
-			</a>
-			<a class="topic-card topic-care" href="soins.html">
-				<span class="topic-number">03 / PRENDRE SOIN</span>
-				<span class="topic-icon" aria-hidden="true">♡</span>
-				<h3>Son bien-être<br>au quotidien</h3>
-				<span class="topic-link">Découvrir les soins <span aria-hidden="true">↗</span></span>
-			</a>
+		<section class="topic-grid" aria-label="Les thèmes du guide">
+			<div class="topic-card topic-races"><span class="topic-number">01 / DÉCOUVRIR</span><span class="topic-icon" aria-hidden="true">✳</span><h3>Trouver sa<br>race de chien</h3><span class="topic-link">Des profils pour tous les quotidiens</span></div>
+			<div class="topic-card topic-food"><span class="topic-number">02 / NOURRIR</span><span class="topic-icon" aria-hidden="true">◒</span><h3>Bien manger,<br>bien grandir</h3><span class="topic-link">Les bases d’une bonne routine</span></div>
+			<div class="topic-card topic-care"><span class="topic-number">03 / PRENDRE SOIN</span><span class="topic-icon" aria-hidden="true">♡</span><h3>Son bien-être<br>au quotidien</h3><span class="topic-link">Les gestes qui comptent</span></div>
+		</section>
+
+		<section class="guide-section races-section">
+			<div class="page-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Faire connaissance</p><h2>À chacun son<br><em>compagnon.</em></h2><p class="page-lead">La race donne quelques indices, mais chaque chien a son propre caractère. Voici quatre profils pour commencer à explorer.</p></div>
+			<div class="breed-section">
+				<div class="filter-row"><p>Filtrer par gabarit</p><div class="filter-controls" role="group" aria-label="Filtrer les races par taille"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Toutes</button><button class="filter-button" type="button" data-filter="small" aria-pressed="false">Petit</button><button class="filter-button" type="button" data-filter="medium" aria-pressed="false">Moyen</button><button class="filter-button" type="button" data-filter="large" aria-pressed="false">Grand</button></div></div>
+				<div class="breed-grid">
+					<article class="breed-card" data-size="large"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=85" alt="Golden retriever au pelage doré"><div class="breed-info"><div><p class="breed-tag">Grand · Très sociable</p><h3>Golden retriever</h3></div><span class="breed-index">01</span><p>Joueur et doux, il aime participer à la vie de famille et a besoin de se dépenser chaque jour.</p></div></article>
+					<article class="breed-card" data-size="medium"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=85" alt="Chien au pelage fauve"><div class="breed-info"><div><p class="breed-tag">Moyen · Plein d’entrain</p><h3>Beagle</h3></div><span class="breed-index">02</span><p>Curieux et dynamique, il adore suivre des pistes. Les promenades et les jeux de flair lui plaisent beaucoup.</p></div></article>
+					<article class="breed-card" data-size="small"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=85" alt="Deux chiens de petite taille en promenade"><div class="breed-info"><div><p class="breed-tag">Petit · Vif et attentif</p><h3>Jack Russell</h3></div><span class="breed-index">03</span><p>Petit par la taille, grand par l’énergie : il aime apprendre, jouer et partir à l’aventure avec son humain.</p></div></article>
+					<article class="breed-card" data-size="medium"><img src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=800&q=85" alt="Berger allemand assis dans l’herbe"><div class="breed-info"><div><p class="breed-tag">Moyen à grand · Fidèle</p><h3>Berger allemand</h3></div><span class="breed-index">04</span><p>Intelligent et proche de son groupe, il a besoin d’activités régulières et d’une éducation cohérente.</p></div></article>
+				</div>
+				<p class="filter-empty" hidden>Aucune race ne correspond à ce filtre.</p>
+			</div>
+			<aside class="note-band"><span aria-hidden="true">✳</span><p><strong>Le bon choix dépend de ton quotidien.</strong> Pense au temps disponible, à l’espace et au niveau d’activité avant d’accueillir un chien.</p></aside>
+		</section>
+
+		<section class="guide-section food-section">
+			<div class="page-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Bien dans sa gamelle</p><h2>Bien manger,<br><em>à son rythme.</em></h2><p class="page-lead">Une alimentation adaptée soutient la santé et l’énergie de ton chien. Ses besoins évoluent avec l’âge, le gabarit et l’activité.</p></div>
+			<div class="feature-split"><div class="feature-image"><img src="https://images.unsplash.com/photo-1582798358481-d199fb7347bb?auto=format&fit=crop&w=1100&q=85" alt="Un chien attend calmement près de sa gamelle"></div><div class="feature-copy"><p class="eyebrow">Les bons repères</p><h3>La régularité<br>fait du bien.</h3><p>Choisis une nourriture complète adaptée à son stade de vie et suis les quantités indiquées sur l’emballage. Ajuste-les avec ton vétérinaire selon sa condition et son activité.</p></div></div>
+			<div class="steps-section"><div class="section-title"><p class="eyebrow">Simplement, chaque jour</p><h3>Les essentiels<br>dans sa routine.</h3></div><div class="steps-list"><article class="step-item"><span class="step-number">01</span><div><h4>De l’eau fraîche</h4><p>Laisse toujours de l’eau propre à sa disposition et renouvelle-la régulièrement.</p></div><span class="step-symbol" aria-hidden="true">◌</span></article><article class="step-item"><span class="step-number">02</span><div><h4>Des horaires stables</h4><p>Des repas servis à des heures régulières aident à installer une routine rassurante.</p></div><span class="step-symbol" aria-hidden="true">◷</span></article><article class="step-item"><span class="step-number">03</span><div><h4>Une transition progressive</h4><p>Pour changer d’aliment, mélange l’ancien et le nouveau sur plusieurs jours afin de ne pas brusquer sa digestion.</p></div><span class="step-symbol" aria-hidden="true">↗</span></article></div></div>
+			<aside class="warning-band"><span class="warning-icon" aria-hidden="true">!</span><p><strong>Attention aux restes de table.</strong> Certains aliments courants, comme le chocolat, le raisin ou l’oignon, peuvent être toxiques pour les chiens. En cas de doute, appelle ton vétérinaire.</p></aside>
+		</section>
+
+		<section class="guide-section care-section">
+			<div class="page-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Une vie équilibrée</p><h2>Le bonheur est<br><em>dans les détails.</em></h2><p class="page-lead">Bouger, se reposer, apprendre et se sentir en sécurité : le bien-être d’un chien se construit dans les petites habitudes.</p></div>
+			<div class="care-feature"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1500&q=85" alt="Portrait d’un chien heureux pendant une promenade"><div class="care-image-label"><span>DU TEMPS ENSEMBLE</span><strong>Une promenade,<br>mille découvertes.</strong></div></div>
+			<div class="care-grid"><article class="care-item"><span class="care-icon" aria-hidden="true">↗</span><p class="eyebrow">01 / BOUGER</p><h3>Sortir chaque jour</h3><p>Les promenades répondent à ses besoins physiques, mais lui permettent aussi de renifler, explorer et découvrir son environnement.</p></article><article class="care-item"><span class="care-icon" aria-hidden="true">♡</span><p class="eyebrow">02 / PRÉVENIR</p><h3>Suivre sa santé</h3><p>Les visites vétérinaires, les vaccins et les soins antiparasitaires aident à prévenir les problèmes et à repérer tôt un changement.</p></article><article class="care-item"><span class="care-icon" aria-hidden="true">✳</span><p class="eyebrow">03 / APPRENDRE</p><h3>Récompenser les progrès</h3><p>Une éducation calme et cohérente, fondée sur la récompense, renforce la confiance et facilite la vie ensemble.</p></article><article class="care-item"><span class="care-icon" aria-hidden="true">◒</span><p class="eyebrow">04 / RÉCUPÉRER</p><h3>Respecter son repos</h3><p>Un endroit tranquille où il peut dormir sans être dérangé est essentiel, surtout après une journée pleine de découvertes.</p></article></div>
+			<div class="closing-band"><p class="eyebrow">Une belle aventure commence ici</p><h3>Un compagnon, toute une vie d’histoires.</h3></div>
 		</section>
 
 		<section class="quote-strip"><span class="quote-mark" aria-hidden="true">“</span><p>Le chien n’a qu’un défaut : il croit les hommes meilleurs qu’ils ne le sont.</p><span class="quote-credit">— ÉTIENNE CHARLET</span></section>
 	</main>
 
-	<footer class="site-footer"><a class="wordmark footer-mark" href="index.html"><span class="mark" aria-hidden="true">C</span> Le Chien</a><p>Un guide pour vivre mieux ensemble.</p><span class="copyright">© <span data-year></span> Le Chien</span></footer>
+	<footer class="site-footer"><div class="wordmark footer-mark"><span class="mark" aria-hidden="true">C</span> Le Chien</div><p>Un guide pour vivre mieux ensemble.</p><span class="copyright">© <span data-year></span> Le Chien</span></footer>
 </body>
 </html>
